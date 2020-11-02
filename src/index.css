@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@400;700&family=Pacifico&display=swap");
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container--narrow {
+  max-width: 1886px;
+  background-color: #f6f6f6;
 }

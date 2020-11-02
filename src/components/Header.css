@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@400;700&family=Pacifico&display=swap");
+.jumbotron {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.parallax {
+  /* Set a specific height */
+  height: 657px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Paragraph for Parallax Section */
+.parallax p {
+  font-size: 24px;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Heading for Parallax Section */
+.parallax h1 {
+  color: rgb(255, 255, 255);
+  font-size: 75px;
+
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  /* line-height: 100px; */
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  /* margin: 0; */
+  transform: rotate(-10deg);
+}
+
+#parallax-static {
+  background-image: url("https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?cs=srgb&dl=pexels-viresh-studio-1444442.jpg&fm=jpg");
+
+  border-radius: 0;
+}
+#parallax-static-2 {
+  background-image: url("https://images.pexels.com/photos/2678412/pexels-photo-2678412.jpeg?cs=srgb&dl=pexels-vladislav-vasnetsov-2678412.jpg&fm=jpg");
+
+  border-radius: 0;
+}
+#parallax-static-3 {
+  background-image: url("https://images.pexels.com/photos/2060239/pexels-photo-2060239.jpeg?cs=srgb&dl=pexels-viresh-studio-2060239.jpg&fm=jpg");
+
+  border-radius: 0;
+}
+
+#parallax-slightly-moving {
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_1280.jpg");
+}
+#parallax-slightly-moving::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+.dot {
+  background: red;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.carousel_conatiner {
+  overflow: hidden;
+}

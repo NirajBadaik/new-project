@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@400;700&family=Pacifico&display=swap");
+.jumbotron {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.parallax {
+  /* Set a specific height */
+  height: 657px;
+  object-fit: contain;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Paragraph for Parallax Section */
+
+/* Heading for Parallax Section */
+.parallax h1 {
+  color: rgb(255, 255, 255);
+  font-size: 75px;
+
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  /* line-height: 100px; */
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  /* margin: 0; */
+  transform: rotate(-10deg);
+}
+
+#parallax-CountDown {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/168927/pexels-photo-168927.jpeg?cs=srgb&dl=pexels-lalesh-aldarwish-168927.jpg&fm=jpg");
+
+  border-radius: 0;
+}
+
+#parallax-slightly-moving::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+/* ////////////////count-down/////////////// */
+.circle-countdown.is-countdown {
+  background-color: transparent;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+.countdown-show5 .countdown-section {
+  width: 19.5%;
+}
+.circle-countdown {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.countdown-section {
+  display: block;
+  float: left;
+  font-size: 75%;
+  text-align: center;
+}
+.circle-countdown .countdown-amount {
+  background-color: #f0394d;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: block;
+  padding-top: 22px;
+  font-size: 30px;
+  margin: 0 auto;
+}
+.countdown-row {
+  clear: both;
+  width: 100%;
+  padding: 0px 2px;
+  text-align: center;
+}
+.circle-countdown .countdown-period {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+  @media screen and (max-width: 480px) {
+    .circle-countdown .countdown-amount {
+      width: 45px;
+      height: 45px;
+      padding-top: 9px;
+      font-size: 20px;
+    }
+  }
+}

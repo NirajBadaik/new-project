@@ -1,0 +1,195 @@
+.couple_heading {
+  color: #333;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 150px;
+  /* margin-top: 50px; */
+  font-size: 40px;
+}
+.custom-btn {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 17px;
+  /* background-color: #f0394d; */
+}
+.custom-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.custom-btn:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+
+  border: 1px solid #f0394d;
+
+  padding: 10px 17px;
+}
+
+.him-her {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: #333333;
+}
+.surname {
+  font-family: "Pacifico", cursive;
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: normal;
+  color: #333333;
+}
+.arrange {
+  display: flex;
+  /* margin-left: 447.5px; */
+  width: 65px;
+  height: 65px;
+  background-color: #f0394d;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 42px;
+  justify-content: center;
+
+  /* height: 50px;
+  margin-top: 42px;
+  background-color: #f0394d;
+  border-radius: 100%;
+  display: inline-block; */
+}
+.coupImg {
+  border: 20px solid #fff;
+}
+.coup_para {
+  font-family: "Arvo", serif;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #6a6a6a;
+}
+
+/* //// */
+.box1 {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  border: 20px solid #fff;
+}
+.box1 .box-content,
+.box1:after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.box1:after {
+  content: "";
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.08) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+  top: 0;
+  transition: all 0.5s ease 0s;
+}
+.box1 .post,
+.box1 .title {
+  transform: translateY(145px);
+  transition: all 0.4s cubic-bezier(0.13, 0.62, 0.81, 0.91) 0s;
+}
+.box1:hover:after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01) 0,
+    rgba(0, 0, 0, 0.09) 11%,
+    rgba(0, 0, 0, 0.12) 13%,
+    rgba(0, 0, 0, 0.19) 20%,
+    rgba(0, 0, 0, 0.29) 28%,
+    rgba(0, 0, 0, 0.29) 29%,
+    rgba(0, 0, 0, 0.42) 38%,
+    rgba(0, 0, 0, 0.46) 43%,
+    rgba(0, 0, 0, 0.53) 47%,
+    rgba(0, 0, 0, 0.75) 69%,
+    rgba(0, 0, 0, 0.87) 84%,
+    rgba(0, 0, 0, 0.98) 99%,
+    rgba(0, 0, 0, 0.94) 100%
+  );
+}
+.box1 img {
+  width: 100%;
+  height: auto;
+}
+.box1 .box-content {
+  padding: 20px;
+  margin-bottom: 20px;
+  bottom: 0;
+  z-index: 1;
+}
+.box1 .title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.box1 .post {
+  display: block;
+  padding: 8px 0;
+  font-size: 15px;
+}
+.box1 .social li a,
+.box1:hover .post,
+.box1:hover .title {
+  transform: translateY(0);
+}
+.box1 .social {
+  list-style: none;
+  padding: 0 0 5px;
+  margin: 40px 0 25px;
+  opacity: 0;
+  position: relative;
+  transform: perspective(500px) rotateX(-90deg) rotateY(0) rotateZ(0);
+  transition: all 0.6s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+.box16:hover .social {
+  opacity: 1;
+  transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0);
+}
+.box16 .social:before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto;
+  position: absolute;
+  top: -23px;
+  left: 0;
+  right: 0;
+}
+.box16 .social li {
+  display: inline-block;
+}
+.box16 .social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #6d3795;
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.box16 .social li a:hover {
+  background: #bea041;
+}
+.box16 .social li:last-child a {
+  margin-right: 0;
+}
+@media only screen and (max-width: 990px) {
+  .box16 {
+    margin-bottom: 30px;
+  }
+}
