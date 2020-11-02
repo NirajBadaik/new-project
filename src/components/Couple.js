@@ -35,7 +35,7 @@ function Couple() {
   });
 
   return (
-    <Page title="Welcome">
+    <>
       {/* <h1 className="couple_heading">THE HAPPY COUPLE </h1> */}
       <div className="container py-5">
         <div className="row mt-30">
@@ -133,7 +133,7 @@ function Couple() {
           </div>
         </div>
       </div>
-    </Page>
+    </>
   );
 }
 
